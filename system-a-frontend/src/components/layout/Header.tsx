@@ -8,6 +8,7 @@ import {
   Search, 
   Home
 } from 'lucide-react';
+import logoSvg from '../../assets/logo.svg';
 
 interface HeaderProps {
   currentTab: string;
@@ -64,7 +65,7 @@ export const Header: React.FC<HeaderProps> = ({
       <header className="govt-brand-header">
         <div className="govt-brand-left">
           <div className="govt-logo-badge" onClick={() => onNavigate('home')} style={{ cursor: 'pointer' }}>
-            <img src="/logo.svg" alt="EkSutra Logo" style={{ width: 38, height: 38 }} />
+            <img src={logoSvg} alt="EkSutra Logo" style={{ width: 38, height: 38 }} />
           </div>
           <div className="govt-title-group">
             <h1>
